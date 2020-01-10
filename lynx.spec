@@ -3,7 +3,7 @@
 Summary: A text-based Web browser
 Name: lynx
 Version: 2.8.8
-Release: 0.1.dev%{devrel}%{?dist}
+Release: 0.3.dev%{devrel}%{?dist}
 License: GPLv2
 Group: Applications/Internet
 Source: http://lynx.isc.org/current/lynx%{version}dev.%{devrel}.tar.bz2
@@ -140,6 +140,12 @@ EOF
 %config(noreplace,missingok) %{_sysconfdir}/lynx-site.cfg
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 2.8.8-0.3.dev15
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 2.8.8-0.2.dev15
+- Mass rebuild 2013-12-27
+
 * Wed Feb 13 2013 Kamil Dudka <kdudka@redhat.com> - 2.8.8-0.1.dev15
 - update to the latest upstream pre-release
 - drop applied patches
@@ -226,7 +232,7 @@ EOF
 - add default-colors option, change default setting (#409211)
 
 * Wed Dec 05 2007 Release Engineering <rel-eng at fedoraproject dot org> - 2.8.6-9
- - Rebuild for openssl bump
+- Rebuild for openssl bump
 
 * Wed Dec  5 2007 Ivana Varekova <varekova@redhat.com> - 2.8.6-8
 - rebuild 
